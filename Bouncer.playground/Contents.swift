@@ -36,12 +36,12 @@ func screen(screenPerson: Clubgoer) {
     }
 
 func screenUnder21(_ person: Clubgoer) {
-    if person.age <= 21
+    if (person.onGuestList) &&  (person.age >= 21)
     {
-        deny(person: person)
+        admit(person: person)
     }
     else{
-        admit(person: person)
+        deny(person: person)
     }
 }
 
