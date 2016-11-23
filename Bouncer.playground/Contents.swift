@@ -36,7 +36,20 @@ func screen(screenPerson: Clubgoer) {
     }
 
 func screenUnder21(_ person: Clubgoer) {
-// TODO: Add your if statement here!
+    if person.age <= 21
+    {
+        deny(person: person)
+    }
+    else{
+        admit(person: person)
+    }
 }
+
+screenUnder21(ayush)
+
+screenUnder21(gabrielle)
+
+screenUnder21(chris)
+
 
 
